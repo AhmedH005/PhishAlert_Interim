@@ -7,13 +7,12 @@ suspicious cues highlighted in the message, an explanation, and a takeaway tip.
 A short summary closes each session.
 
 > **This is an interim development build — the project is still in progress.**
-> It shows tangible, working progress at the interim stage: the core learning
-> loop runs end to end, while the more advanced features are visibly stubbed so
-> the path to the planned final feature set is clear. The scope is intentionally
-> focused on the core loop at this stage, with further features planned for the
-> next sprints.
+> It shows real, working progress at the interim stage: the core learning loop
+> runs end to end, and the more advanced features are clearly labelled so the
+> path to the final feature set is easy to follow. The current focus is the core
+> loop, with the remaining features to be built over the next sprints.
 
-## What works (core loop, fully functional)
+## What works so far
 
 - **Welcome screen** with the three planned practice modes (one enabled).
 - **Level selection** grouped by difficulty tier (Easy, Medium).
@@ -28,11 +27,11 @@ A short summary closes each session.
 - **In-memory session tracking** (score, answers, confidence) — no login, no
   backend, on-device only, which is the right scope for this stage.
 
-## What is intentionally stubbed (the room to grow)
+## Planned next (not yet built)
 
 - **Random Practice** and **Review Mistakes** modes — shown on the welcome
   screen but disabled with a **"Planned"** label. `SessionTracker` has matching
-  `// TODO(next sprint)` method stubs.
+  `// TODO(next sprint)` placeholder methods.
 - **Confidence analytics view** — the summary shows the **raw** over/under
   counts only, with an explicit **"in development"** marker. The full
   visualisation and personalised tips are planned for a later sprint.
