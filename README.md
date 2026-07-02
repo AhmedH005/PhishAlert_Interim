@@ -6,11 +6,12 @@ or **Legit**, rates their confidence (1–5), and gets immediate feedback with t
 suspicious cues highlighted in the message, an explanation, and a takeaway tip.
 A short summary closes each session.
 
-> **This is a deliberately mid-development snapshot**, not the finished product.
-> It exists to demonstrate tangible, working progress at the interim stage: the
-> core learning loop runs end to end, while the more advanced features are
-> visibly stubbed so the path to the finished app is clear. It is intentionally
-> a scaled-down subset of the full application.
+> **This is an interim development build — the project is still in progress.**
+> It shows tangible, working progress at the interim stage: the core learning
+> loop runs end to end, while the more advanced features are visibly stubbed so
+> the path to the planned final feature set is clear. The scope is intentionally
+> focused on the core loop at this stage, with further features planned for the
+> next sprints.
 
 ## What works (core loop, fully functional)
 
@@ -37,7 +38,8 @@ A short summary closes each session.
   visualisation and personalised tips are planned for a later sprint.
 - **Difficulty tiers** are present but simple: the dataset currently reaches the
   `medium` tier only (the `hard` tier is defined in the model, ready to fill).
-- **Content pack** is a 12-message starter set (the finished app has many more).
+- **Content pack** is a 12-message starter set, with more planned for future
+  development (the dataset will be expanded in later sprints).
 
 ## Project structure
 
