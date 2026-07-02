@@ -1,9 +1,8 @@
 // Domain model for a single training message shown to the learner.
 //
-// This mirrors the structure of the finished Phish Alert app so the interim
-// prototype can grow into it, but it is deliberately scoped down for this
-// mid-development snapshot. For example, there is no rich `title` field yet —
-// the subject line (email) or sender (SMS) is used as the heading instead.
+// The model is kept lean for this stage and can grow as the app develops.
+// For example, there is no rich `title` field yet — the subject line (email)
+// or sender (SMS) is used as the heading instead.
 
 /// Whether a message is a phishing attempt or a legitimate message.
 enum MessageClassification { phish, legit }
@@ -31,8 +30,8 @@ extension MessageChannelX on MessageChannel {
 
 /// Difficulty tier for the level a message belongs to.
 ///
-/// `hard` is defined for parity with the finished app's difficulty ladder even
-/// though the interim dataset only reaches the `medium` tier so far.
+/// `hard` is defined ahead of the harder levels planned later; the dataset
+/// only reaches the `medium` tier so far.
 enum MessageDifficulty { easy, medium, hard }
 
 extension MessageDifficultyX on MessageDifficulty {
@@ -64,9 +63,9 @@ class MessageItem {
   });
 
   /// Builds a [MessageItem] from the plain-string "content pack" format used by
-  /// the bundled dataset. Keeping the parsing here mirrors the finished app and
-  /// keeps `sample_messages.dart` readable. An empty [subject] becomes `null`
-  /// (SMS messages have no subject line).
+  /// the bundled dataset. Keeping the parsing here keeps `sample_messages.dart`
+  /// readable. An empty [subject] becomes `null` (SMS messages have no subject
+  /// line).
   factory MessageItem.contentPack({
     required String id,
     required int levelNumber,

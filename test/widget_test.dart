@@ -66,7 +66,7 @@ void main() {
       expect(tracker.currentMessage.id, 'T2');
     });
 
-    test('flags overconfidence and underconfidence with the repo rule', () {
+    test('flags overconfidence and underconfidence', () {
       final tracker = SessionTracker(messages: _testMessages);
       tracker.startLevel(1);
 

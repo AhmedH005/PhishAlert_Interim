@@ -1,9 +1,9 @@
 import '../models/message_item.dart';
 
 /// The bundled starter dataset for the interim prototype: 12 hand-written
-/// messages spread across 7 levels (easy → medium). This is intentionally a
-/// small subset of the finished app's content pack. The messages are stored
-/// on-device and in memory only; there is no backend yet.
+/// messages spread across 7 levels (easy → medium). It is a small starter set
+/// that will grow in later sprints. The messages are stored on-device and in
+/// memory only; there is no backend yet.
 final List<MessageItem> sampleMessages = [
   MessageItem.contentPack(
     id: 'L1Q1',

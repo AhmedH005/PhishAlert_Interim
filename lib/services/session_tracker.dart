@@ -4,7 +4,7 @@ import 'package:flutter/foundation.dart';
 
 import '../models/message_item.dart';
 
-/// The practice modes the finished app offers. Only [PracticeMode.byLevel] is
+/// The practice modes the app will offer. Only [PracticeMode.byLevel] is
 /// implemented in this interim build; the other two are planned for a later
 /// sprint (see [startRandomPractice] / [startReviewMistakes]).
 enum PracticeMode { byLevel, randomPractice, reviewMistakes }
@@ -27,10 +27,9 @@ class AnswerRecord {
 
 /// In-memory session state for one run through a set of messages.
 ///
-/// This is a scoped-down version of the finished app's tracker. It fully drives
-/// the core loop — start a level, answer, score, advance, summarise — and
-/// exposes the confidence metrics the summary needs. Random practice and
-/// mistake review are stubbed out for a future sprint.
+/// It fully drives the core loop — start a level, answer, score, advance,
+/// summarise — and exposes the confidence metrics the summary needs. Random
+/// practice and mistake review are planned for a future sprint.
 ///
 /// It extends [ChangeNotifier] so screens can later observe it reactively; for
 /// now the flow is navigation-driven and each screen reads the tracker directly.

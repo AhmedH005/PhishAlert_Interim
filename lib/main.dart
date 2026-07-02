@@ -14,8 +14,8 @@ void main() {
 ///
 /// A single [SessionTracker] is created up front and threaded through the
 /// screens. Theming is kept light on purpose for this stage: a seeded Material 3
-/// colour scheme with a few button tweaks, rather than the fully art-directed
-/// look planned for the finished app.
+/// colour scheme with a few button tweaks, with fuller visual polish planned
+/// for a later stage.
 class PhishAlertApp extends StatelessWidget {
   const PhishAlertApp({super.key, required this.sessionTracker});
 
